@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import './Navbar.css';
 import Button from '../buttons/Button'
+import Home from "../pages/Home";
 
 const Navbar = () => {
 
@@ -49,8 +50,8 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                                Products
+                            <Link to='/posts' className='nav-links' onClick={closeMobileMenu}>
+                                Posts
                             </Link>
                         </li>
                         <li className='nav-item'>
@@ -59,9 +60,11 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline' >SIGN UP</Button>}
+                    {button && <Button buttonStyle='btn--outline' > SIGN UP </Button>}
                 </section>
             </nav>
+            {/*add home component*/}
+            <Home />
         </>
     )
 

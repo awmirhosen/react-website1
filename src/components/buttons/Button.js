@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const STYLES = ['btn--primary', 'btn--outline'];
 const SIZES = ['btn--medium', 'btn--large'];
 
-// passing the datas
+// passing the data
 export const Buttons = ({
     children,
     type,
@@ -31,3 +31,4 @@ export const Buttons = ({
 
 }
 
+export default Buttons
